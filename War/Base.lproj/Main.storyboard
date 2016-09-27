@@ -26,27 +26,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o4F-sy-XcK" userLabel="CardContainerView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card10" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-Qn-qgx" userLabel="FirstCardImage">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" red="0.20726608087025689" green="0.28862457822244336" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="170" id="Jl0-jg-bDQ"/>
-                                            <constraint firstAttribute="width" constant="120" id="nJh-hs-aqr"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Jl0-jg-bDQ"/>
-                                                <exclude reference="nJh-hs-aqr"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="Jl0-jg-bDQ"/>
-                                                <include reference="nJh-hs-aqr"/>
-                                            </mask>
-                                        </variation>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card13" translatesAutoresizingMaskIntoConstraints="NO" id="wQl-tT-B6B" userLabel="SecondCardImage">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="wQl-tT-B6B" userLabel="SecondCardImage">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                         <color key="backgroundColor" red="0.20726608087025689" green="0.28862457822244336" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -66,6 +46,26 @@
                                             </mask>
                                         </variation>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="f9B-Qn-qgx" userLabel="FirstCardImage">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="0.20726608087025689" green="0.28862457822244336" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="170" id="Jl0-jg-bDQ"/>
+                                            <constraint firstAttribute="width" constant="120" id="nJh-hs-aqr"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Jl0-jg-bDQ"/>
+                                                <exclude reference="nJh-hs-aqr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Jl0-jg-bDQ"/>
+                                                <include reference="nJh-hs-aqr"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wQl-tT-B6B" firstAttribute="centerY" secondItem="o4F-sy-XcK" secondAttribute="centerY" id="9ag-XN-N25"/>
@@ -79,8 +79,8 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="f9B-Qn-qgx"/>
                                         <exclude reference="wQl-tT-B6B"/>
+                                        <exclude reference="f9B-Qn-qgx"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="Exp-rW-tCq"/>
@@ -95,8 +95,8 @@
                                 </variation>
                                 <variation key="widthClass=compact">
                                     <mask key="subviews">
-                                        <include reference="f9B-Qn-qgx"/>
                                         <include reference="wQl-tT-B6B"/>
+                                        <include reference="f9B-Qn-qgx"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="Exp-rW-tCq"/>
@@ -231,8 +231,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="120" height="120"/>
         <image name="background" width="76" height="76"/>
-        <image name="card10" width="29" height="29"/>
-        <image name="card13" width="57" height="57"/>
     </resources>
 </document>
