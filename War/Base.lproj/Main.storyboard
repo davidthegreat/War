@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -84,12 +85,12 @@
                                     <mask key="constraints">
                                         <exclude reference="Exp-rW-tCq"/>
                                         <exclude reference="qsY-hi-Xm0"/>
-                                        <exclude reference="9ag-XN-N25"/>
-                                        <exclude reference="ZL2-AB-BGz"/>
-                                        <exclude reference="oYa-B3-9Hj"/>
                                         <exclude reference="EON-kJ-rPn"/>
                                         <exclude reference="s9n-3R-81H"/>
                                         <exclude reference="t9g-oA-go8"/>
+                                        <exclude reference="9ag-XN-N25"/>
+                                        <exclude reference="ZL2-AB-BGz"/>
+                                        <exclude reference="oYa-B3-9Hj"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact">
@@ -100,12 +101,12 @@
                                     <mask key="constraints">
                                         <include reference="Exp-rW-tCq"/>
                                         <include reference="qsY-hi-Xm0"/>
-                                        <include reference="9ag-XN-N25"/>
-                                        <include reference="ZL2-AB-BGz"/>
-                                        <include reference="oYa-B3-9Hj"/>
                                         <include reference="EON-kJ-rPn"/>
                                         <include reference="s9n-3R-81H"/>
                                         <include reference="t9g-oA-go8"/>
+                                        <include reference="9ag-XN-N25"/>
+                                        <include reference="ZL2-AB-BGz"/>
+                                        <include reference="oYa-B3-9Hj"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -173,20 +174,20 @@
                                 <exclude reference="Cq8-2D-CQo"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="3BS-xz-6zk"/>
+                                <exclude reference="E2f-JI-wTO"/>
+                                <exclude reference="jlq-X3-ut4"/>
+                                <exclude reference="8n6-1O-IB4"/>
+                                <exclude reference="OcX-pf-VFw"/>
+                                <exclude reference="cPr-Im-os8"/>
+                                <exclude reference="RQd-w4-Gtg"/>
+                                <exclude reference="yKQ-LP-pBb"/>
                                 <exclude reference="Ai2-n9-LsS"/>
                                 <exclude reference="Dos-1P-PTf"/>
                                 <exclude reference="U7h-lY-tNm"/>
                                 <exclude reference="Ucg-9k-DIF"/>
                                 <exclude reference="Wlf-Xn-Fp8"/>
                                 <exclude reference="hza-VN-1Xp"/>
-                                <exclude reference="RQd-w4-Gtg"/>
-                                <exclude reference="yKQ-LP-pBb"/>
-                                <exclude reference="8n6-1O-IB4"/>
-                                <exclude reference="OcX-pf-VFw"/>
-                                <exclude reference="cPr-Im-os8"/>
-                                <exclude reference="3BS-xz-6zk"/>
-                                <exclude reference="E2f-JI-wTO"/>
-                                <exclude reference="jlq-X3-ut4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -197,23 +198,29 @@
                                 <include reference="Cq8-2D-CQo"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="3BS-xz-6zk"/>
+                                <include reference="E2f-JI-wTO"/>
+                                <include reference="jlq-X3-ut4"/>
+                                <include reference="8n6-1O-IB4"/>
+                                <include reference="OcX-pf-VFw"/>
+                                <include reference="cPr-Im-os8"/>
+                                <include reference="RQd-w4-Gtg"/>
+                                <include reference="yKQ-LP-pBb"/>
                                 <include reference="Ai2-n9-LsS"/>
                                 <include reference="Dos-1P-PTf"/>
                                 <include reference="U7h-lY-tNm"/>
                                 <include reference="Ucg-9k-DIF"/>
                                 <include reference="Wlf-Xn-Fp8"/>
                                 <include reference="hza-VN-1Xp"/>
-                                <include reference="RQd-w4-Gtg"/>
-                                <include reference="yKQ-LP-pBb"/>
-                                <include reference="8n6-1O-IB4"/>
-                                <include reference="OcX-pf-VFw"/>
-                                <include reference="cPr-Im-os8"/>
-                                <include reference="3BS-xz-6zk"/>
-                                <include reference="E2f-JI-wTO"/>
-                                <include reference="jlq-X3-ut4"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="shY-wx-mQz" id="kJY-Jf-xFg"/>
+                        <outlet property="firstCardImageView" destination="wQl-tT-B6B" id="gyJ-Ve-cvH"/>
+                        <outlet property="playRoundButton" destination="Uaf-Qo-feS" id="ze2-Fc-5Pn"/>
+                        <outlet property="secondCardImageView" destination="f9B-Qn-qgx" id="h3z-Zm-Bxa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
