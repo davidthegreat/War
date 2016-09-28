@@ -120,9 +120,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cq8-2D-CQo" userLabel="PlayButtonContainer">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uaf-Qo-feS" userLabel="PlayRoundButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uaf-Qo-feS" userLabel="PlayRoundButton">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="Play Round"/>
+                                        <state key="normal" image="startbutton"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="105" y="32" width="152" height="152"/>
+                                        </variation>
                                         <connections>
                                             <action selector="playRoundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4yZ-L1-1l6"/>
                                         </connections>
@@ -233,5 +236,6 @@
     <resources>
         <image name="back" width="120" height="120"/>
         <image name="background" width="76" height="76"/>
+        <image name="startbutton" width="152" height="152"/>
     </resources>
 </document>
