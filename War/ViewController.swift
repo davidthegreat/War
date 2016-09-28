@@ -13,7 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var playRoundButton: UIButton!
     @IBOutlet weak var backgroundImageView: UIImageView!
-
+    
+    @IBOutlet weak var playerScore: UILabel!
+    @IBOutlet weak var enemyScore: UILabel!
+    var playerScoreTotal = 0
+    var enemyScoreTotal = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -36,12 +41,28 @@ class ViewController: UIViewController {
         
         let secondCardString:String = String(format: "card%i", secondRandomNumber)
         
+        
+        
         //Set the first card image view to the assest corresponding to the randomized number
         self.firstCardImageView.image = UIImage(named: firstCardString)
-      
-        
         
         self.secondCardImageView.image = UIImage(named: secondCardString)
+        
+        
+        //Determine the higher card
+        if firstRandomNumber > secondRandomNumber{
+            //TODO:first card is larger
+            playerScoreTotal += 1
+            self.playerScore.text = String(playerScoreTotal)
+        }
+        else if firstRandomNumber == secondRandomNumber {
+            //TODO: numbers are equal
+        }
+        else{
+            //TODO: second card is larger
+            enemyScoreTotal += 1
+            self.enemyScore.text = String(enemyScoreTotal)
+        }
     }
 
 }
